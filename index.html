@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Arief Rahman Hakim</title>
+    <link rel="icon" type="image/png" href="img/emyu.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="nav-content">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+          <li>
+            <a
+              href="#home"
+              class="lang-content active"
+              data-en="Home"
+              data-id="Beranda"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#education"
+              class="lang-content active"
+              data-en="Education"
+              data-id="Pendidikan"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="lang-content active"
+              data-en="Projects"
+              data-id="Proyek"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="lang-content active"
+              data-en="Contact"
+              data-id="Kontak"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <div class="language-switcher">
+              <button class="lang-btn active" data-lang="en">EN</button>
+              <button class="lang-btn" data-lang="id">ID</button>
+            </div>
+          </li>
+          <li><button class="toggle" id="darkToggle">🌙</button></li>
+        </ul>
+        <button class="mobile-menu" id="mobileMenu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <button class="mobile-nav-close" id="mobileNavClose">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul>
+        <li>
+          <a
+            href="#home"
+            class="lang-content active"
+            data-en="Home"
+            data-id="Beranda"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#education"
+            class="lang-content active"
+            data-en="Education"
+            data-id="Pendidikan"
+            >Education</a
+          >
+        </li>
+        <li>
+          <a
+            href="#projects"
+            class="lang-content active"
+            data-en="Projects"
+            data-id="Proyek"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="lang-content active"
+            data-en="Contact"
+            data-id="Kontak"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="mobile-nav-controls">
+        <div class="language-switcher">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="id">ID</button>
+        </div>
+        <button class="toggle" id="darkToggleMobile">🌙</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="mobile-hero-bg"></div>
+
+        <div class="hero-content" data-aos="fade-right">
+          <h1
+            class="lang-content active"
+            data-en="From concept to realization, every detail tells a story."
+            data-id="Dari konsep hingga realisasi, setiap detail menceritakan kisah."
+          >
+            From concept to realization, every detail tells a story.
+          </h1>
+          <p
+            class="hero-subtitle lang-content active"
+            data-en="A Computer Science graduate with strong communication skills, capable of bridging technical and non-technical needs within a team. Experienced in collaborating with developers and delivering innovative solutions."
+            data-id="Lulusan Ilmu Komputer dengan kemampuan komunikasi yang kuat, mampu menjembatani kebutuhan teknis dan non-teknis dalam tim. Berpengalaman dalam berkolaborasi dengan developer dan memberikan solusi inovatif."
+          >
+            A Computer Science graduate with strong communication skills,
+            capable of bridging technical and non-technical needs within a team.
+            Experienced in collaborating with developers and delivering
+            innovative solutions.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-primary" onclick="openCV()">
+              <i class="fas fa-file-pdf"></i>
+              <span
+                class="lang-content active"
+                data-en="View CV"
+                data-id="Lihat CV"
+                >View CV</span
+              >
+            </button>
+            <a href="#contact" class="btn-secondary">
+              <i class="fas fa-envelope"></i>
+              <span
+                class="lang-content active"
+                data-en="Get in Touch"
+                data-id="Hubungi Saya"
+                >Get in Touch</span
+              >
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-aos="fade-left">
+          <div class="profile-container">
+            <div class="profile-ring">
+              <img src="img/arieff.png" alt="" class="profile-img" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section class="section" id="education">
+        <div class="section-header" data-aos="fade-up">
+          <div
+            class="section-badge lang-content active"
+            data-en="🎓 Education"
+            data-id="🎓 Pendidikan"
+          >
+            🎓 Education
+          </div>
+          <h2
+            class="section-title lang-content active"
+            data-en="A Path of Learning and Knowledge"
+            data-id="Perjalanan Belajar dan Pengetahuan"
+          >
+            A Path of Learning and Knowledge
+          </h2>
+          <p
+            class="section-description lang-content active"
+            data-en="My educational journey that shaped my technical foundation and professional growth."
+            data-id="Perjalanan pendidikan saya yang membentuk fondasi teknis dan pertumbuhan profesional."
+          >
+            My educational journey that shaped my technical foundation and
+            professional growth.
+          </p>
+        </div>
+
+        <div class="education-timeline">
+          <div class="education-item" data-aos="fade-right">
+            <div class="education-content">
+              <h3
+                class="education-degree lang-content active"
+                data-en="Informatics Engineering"
+                data-id="Teknik  Informatika"
+              >
+                Informatics Engineering
+              </h3>
+              <div class="education-school">Universitas Pamulang</div>
+              <div
+                class="education-date lang-content active"
+                data-en=" January 2024"
+                data-id="Januari 2024"
+              >
+                March 2019 - January 2024
+              </div>
+            </div>
+            <div class="education-icon">🎓</div>
+          </div>
+
+          <div class="education-item" data-aos="fade-left">
+            <div class="education-content">
+              <h3
+                class="education-degree lang-content active"
+                data-en="Computer and Network Engineering"
+                data-id="Teknik Komputer dan Jaringan"
+              >
+                Computer and Network Engineering
+              </h3>
+              <div class="education-school">SMK Yuppentek 2</div>
+              <div
+                class="education-date lang-content active"
+                data-en=" May 2018"
+                data-id="Mei 2018"
+              >
+                May 2018
+              </div>
+            </div>
+            <div class="education-icon">📘</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section" id="projects">
+        <div class="section-header" data-aos="fade-up">
+          <div
+            class="section-badge lang-content active"
+            data-en="🚀 Projects"
+            data-id="🚀 Proyek"
+          >
+            🚀 Projects
+          </div>
+          <h2
+            class="section-title lang-content active"
+            data-en="My Portfolio Project"
+            data-id="Project Portofolio Saya"
+          >
+            My Portfolio Project
+          </h2>
+          <p
+            class="section-description lang-content active"
+            data-en="Explore my portfolio of projects that showcase my skills and passion for technology."
+            data-id="Jelajahi portofolio proyek saya yang menunjukkan kemampuan dan passion untuk teknologi."
+          >
+            Explore my portfolio of projects that showcase my skills and passion
+            for technology.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="img/Sispak.jpg"
+              alt="Expert System"
+              class="project-image"
+            />
+            <div class="project-content">
+              <div
+                class="project-category lang-content active"
+                data-en="Website "
+                data-id="Website"
+              >
+                Website
+              </div>
+              <h3
+                class="project-title lang-content active"
+                data-en="Expert System for Veterinary Diagnosis of Dogs & Cats"
+                data-id="Sistem Pakar Diagnosa Hewan Anjing & Kucing "
+              >
+                Expert System for Veterinary Diagnosis of Dogs & Cats
+              </h3>
+              <p
+                class="project-description lang-content active"
+                data-en="A comprehensive web-based expert system designed to diagnose diseases in dogs and cats using advanced algorithms and veterinary knowledge."
+                data-id="Sistem pakar berbasis web yang komprehensif dirancang untuk mendiagnosis penyakit pada anjing dan kucing menggunakan algoritma canggih dan pengetahuan veteriner."
+              >
+                A comprehensive web-based expert system designed to diagnose
+                diseases in dogs and cats using advanced algorithms and
+                veterinary knowledge.
+              </p>
+              <a href="project1.html" class="project-link">
+                <span
+                  class="lang-content active"
+                  data-en="Learn More"
+                  data-id="Pelajari Lebih Lanjut"
+                  >Learn More</span
+                >
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <img src="img/dta.jpg" alt="Data Analysis" class="project-image" />
+            <div class="project-content">
+              <div
+                class="project-category lang-content active"
+                data-en="Data Analytics"
+                data-id="Analisis Data"
+              >
+                Data Analyst
+              </div>
+              <h3
+                class="project-title lang-content active"
+                data-en="Visualisasi Data"
+                data-id="Visualisasi Data"
+              >
+                Visualisasi Data
+              </h3>
+              <p
+                class="project-description lang-content active"
+                data-en="This dashboard analyzes flight delays in the United States from February 2017 to July 2022. The main goal of this project is to identify patterns and key factors contributing to flight delays."
+                data-id="Dashboard ini menganalisis keterlambatan penerbangan di Amerika Serikat dari Februari 2017 hingga Juli 2022. Tujuan utama proyek ini adalah untuk mengidentifikasi pola dan faktor penyebab keterlambatan penerbangan ."
+              >
+                This dashboard analyzes flight delays in the United States from
+                February 2017 to July 2022. The main goal of this project is to
+                identify patterns and key factors contributing to flight delays.
+              </p>
+              <a href="project2.html" class="project-link">
+                <span
+                  class="lang-content active"
+                  data-en="Learn More"
+                  data-id="Pelajari Lebih Lanjut"
+                  >Learn More</span
+                >
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <img
+              src="img/analissheet.png"
+              alt="Landing Page"
+              class="project-image"
+            />
+            <div class="project-content">
+              <div
+                class="project-category lang-content active"
+                data-en="Data Analytics"
+                data-id="Data Analyst"
+              >
+                Data Analyst
+              </div>
+              <h3
+                class="project-title lang-content active"
+                data-en="Visualisasi Data"
+                data-id="Visualisasi Data"
+              >
+                Visualisasi Data
+              </h3>
+              <p
+                class="project-description lang-content active"
+                data-en="This project is an interactive dashboard that analyzes the mental health of healthcare workers."
+                data-id="Project ini adalah dashboard interaktif yang menganalisis kesehatan mental tenaga kerja di sektor kesehatan."
+              >
+                This project is an interactive dashboard that analyzes the
+                mental health of healthcare workers..
+              </p>
+              <a href="project3.html" class="project-link">
+                <span
+                  class="lang-content active"
+                  data-en="Learn More"
+                  data-id="Pelajari Lebih Lanjut"
+                  >Learn More</span
+                >
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section" id="contact">
+        <div class="section-header" data-aos="fade-up">
+          <h2
+            class="section-title lang-content active"
+            data-en="Get In Touch"
+            data-id="Mari Berkontak"
+          >
+            Get In Touch
+          </h2>
+          <p
+            class="section-description lang-content active"
+            data-en="Have a project in mind? Let's work together to bring your ideas to life."
+            data-id="Punya proyek dalam pikiran? Mari bekerja sama untuk mewujudkan ide Anda."
+          >
+            Have a project in mind? Let's work together to bring your ideas to
+            life.
+          </p>
+        </div>
+
+        <div class="contact-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3
+                class="lang-content active"
+                data-en="Let's Start a Conversation"
+                data-id="Mari Mulai Percakapan"
+              >
+                Let's Start a Conversation
+              </h3>
+              <p
+                class="lang-content active"
+                data-en="I'm always interested in hearing about new projects and opportunities. Whether you're a company looking to hire, or you're someone with an interesting project, I'd love to hear from you."
+                data-id="Saya selalu tertarik mendengar tentang proyek dan peluang baru. Apakah Anda perusahaan yang ingin merekrut, atau seseorang dengan proyek yang menarik, saya ingin mendengar dari Anda."
+              >
+                I'm always interested in hearing about new projects and
+                opportunities. Whether you're a company looking to hire, or
+                you're someone with an interesting project, I'd love to hear
+                from you.
+              </p>
+              <p
+                class="lang-content active"
+                data-en="Drop me a message and I'll get back to you as soon as possible. Let's create something amazing together!"
+                data-id="Kirimkan saya pesan dan saya akan menghubungi Anda sesegera mungkin. Mari ciptakan sesuatu yang luar biasa bersama!"
+              >
+                Drop me a message and I'll get back to you as soon as possible.
+                Let's create something amazing together!
+              </p>
+            </div>
+
+            <form
+              class="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="8f8b807f-e4bf-4944-80d4-4bb77fc62683"
+              />
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-input"
+                  required
+                  data-en-placeholder="Your Name"
+                  data-id-placeholder="Nama Anda"
+                  placeholder="Your Name"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  required
+                  data-en-placeholder="Your Email"
+                  data-id-placeholder="Email Anda"
+                  placeholder="Your Email"
+                />
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  rows="5"
+                  class="form-textarea"
+                  required
+                  data-en-placeholder="Your Message"
+                  data-id-placeholder="Pesan Anda"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="form-submit">
+                <i class="fas fa-paper-plane"></i>
+                <span
+                  class="lang-content active"
+                  data-en="Send Message"
+                  data-id="Kirim Pesan"
+                  >Send Message</span
+                >
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="social-links">
+          <!-- <a
+            href="https://github.com/"
+            target="_blank"
+            class="social-link"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a> -->
+          <a
+            href="https://www.linkedin.com/in/arief-rahman-hakim-a76709340"
+            target="_blank"
+            class="social-link"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="mailto:ariefrahmanhakkim@gmail.com"
+            class="social-link"
+            aria-label="Email"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://wa.me/089652873664"
+            target="_blank"
+            class="social-link"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ariefrahmanhakkim/"
+            target="_blank"
+            class="social-link"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <p class="footer-text">
+          &copy; <span id="year"></span> Arief Rahman Hakim. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- CV Modal -->
+    <div id="cvModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2
+            class="lang-content active"
+            data-en="CV Preview"
+            data-id="Pratinjau CV"
+          >
+            CV Preview
+          </h2>
+          <button class="modal-close" onclick="closeCV()">&times;</button>
+        </div>
+
+        <iframe
+          src="https://drive.google.com/file/d/1-HToKBNjyIKaJ8WeIeX1uYVlMADr9ZSD/preview"
+          class="cv-frame"
+          allow="autoplay"
+        >
+        </iframe>
+
+        <div style="text-align: center; margin-top: 20px">
+          <a
+            href="https://drive.google.com/uc?export=download&id=1-HToKBNjyIKaJ8WeIeX1uYVlMADr9ZSD"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+          >
+            <i class="fas fa-download"></i>
+            <span
+              class="lang-content active"
+              data-en="Download CV"
+              data-id="Unduh CV"
+              >Download CV</span
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

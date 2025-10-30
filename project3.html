@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualisasi Data Analyst| Arief Rahman Hakim</title>
+    <link rel="icon" type="image/png" href="img/emyu.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="nav-content">
+        <a href="index.html" class="logo">Portfolio</a>
+        <ul class="nav-links">
+          <li>
+            <a
+              href="index.html#home"
+              class="lang-content active"
+              data-en="Home"
+              data-id="Beranda"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#education"
+              class="lang-content active"
+              data-en="Education"
+              data-id="Pendidikan"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#projects"
+              class="lang-content active"
+              data-en="Projects"
+              data-id="Proyek"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#contact"
+              class="lang-content active"
+              data-en="Contact"
+              data-id="Kontak"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <div class="language-switcher">
+              <button class="lang-btn active" data-lang="en">EN</button>
+              <button class="lang-btn" data-lang="id">ID</button>
+            </div>
+          </li>
+          <li><button class="toggle" id="darkToggle">🌙</button></li>
+        </ul>
+        <button class="mobile-menu" id="mobileMenu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <button class="mobile-nav-close" id="mobileNavClose">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul>
+        <li>
+          <a
+            href="index.html#home"
+            class="lang-content active"
+            data-en="Home"
+            data-id="Beranda"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="index.html#education"
+            class="lang-content active"
+            data-en="Education"
+            data-id="Pendidikan"
+            >Education</a
+          >
+        </li>
+        <li>
+          <a
+            href="index.html#projects"
+            class="lang-content active"
+            data-en="Projects"
+            data-id="Proyek"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="index.html#contact"
+            class="lang-content active"
+            data-en="Contact"
+            data-id="Kontak"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="mobile-nav-controls">
+        <div class="language-switcher">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="id">ID</button>
+        </div>
+        <button class="toggle" id="darkToggleMobile">🌙</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <main>
+        <div class="project-header" data-aos="fade-up">
+          <h1
+            class="project-title lang-content active"
+            data-en="Visualisasi Data Analyst"
+            data-id="Visualisasi Data Analisis"
+          >
+            Visualisasi Data Analyst
+          </h1>
+        </div>
+
+        <!-- Image Carousel -->
+        <div class="swiper-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper myImageSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="img/pj3.PNG"
+                  alt="Review Page"
+                  onclick="openFullscreen(this)"
+                />
+              </div>
+            </div>
+
+            <!-- Tombol Navigasi -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <!-- Fullscreen Modal -->
+        <div
+          id="fullscreenModal"
+          class="fullscreen-modal"
+          onclick="closeFullscreen()"
+        >
+          <span class="close-btn">&times;</span>
+          <img id="fullscreenImg" />
+        </div>
+
+        <div data-aos="fade-up">
+          <h2
+            class="lang-content active"
+            data-en="About the Project"
+            data-id="Tentang Project"
+            style="margin-bottom: 10px"
+          >
+            About the Project
+          </h2>
+          <p
+            class="lang-content active content-text"
+            data-en="This project is an interactive dashboard that analyzes the mental health of healthcare workers. It visualizes data from 5,000 employees, covering stress levels, job satisfaction, and burnout frequency.
+            The dashboard helps identify key stress factors, such as heavy workload and poor work environment. It also displays job satisfaction by department and employee type, along with turnover intention and access to employee assistance programs (EAPs).."
+            data-id="Project ini adalah dashboard interaktif yang menganalisis kesehatan mental tenaga kerja di sektor kesehatan. Dashboard menampilkan data dari 5.000 karyawan mencakup tingkat stres, kepuasan kerja, dan frekuensi burnout.
+            Visualisasi ini membantu mengidentifikasi faktor utama penyebab stres, seperti beban kerja tinggi dan lingkungan kerja yang kurang ideal. Selain itu, dashboard juga menunjukkan kepuasan kerja per departemen dan jenis pekerjaan, serta tingkat niat keluar kerja (turnover intention) dan akses ke program bantuan karyawan (EAPs)."
+          >
+            This project is an interactive dashboard that analyzes the mental
+            health of healthcare workers. It visualizes data from 5,000
+            employees, covering stress levels, job satisfaction, and burnout
+            frequency. The dashboard helps identify key stress factors, such as
+            heavy workload and poor work environment. It also displays job
+            satisfaction by department and employee type, along with turnover
+            intention and access to employee assistance programs (EAPs).
+          </p>
+        </div>
+
+        <div class="feature-tech">
+          <!-- Fitur Utama -->
+          <div class="fitur" data-aos="fade-right">
+            <h3
+              class="lang-content active"
+              data-en="Main Features"
+              data-id="Fitur Utama"
+            >
+              Main Features
+            </h3>
+            <ul>
+              <li
+                class="lang-content active"
+                data-en="Displays the total number of employees, average job satisfaction level, and average stress level."
+                data-id="Menampilkan total karyawan, tingkat kepuasan kerja rata-rata, dan tingkat stres rata-rata.."
+              >
+                Displays the total number of employees, average job satisfaction
+                level, and average stress level.
+              </li>
+
+              <li
+                class="lang-content active"
+                data-en="Visualizes Burnout Frequency to show how often employees experience work exhaustion."
+                data-id="Visualisasi Burnout Frequency untuk melihat frekuensi kelelahan kerja karyawan.."
+              >
+                Visualizes Burnout Frequency to show how often employees
+                experience work exhaustion.
+              </li>
+
+              <li
+                class="lang-content active"
+                data-en="Analyzes key stress factors such as Heavy Workload, Poor Work Environment, and Career Stagnation."
+                data-id="Analisis faktor penyebab stres kerja seperti Heavy Workload, Poor Work Environment, dan Career Stagnation.."
+              >
+                Analyzes key stress factors such as Heavy Workload, Poor Work
+                Environment, and Career Stagnation..
+              </li>
+
+              <li
+                class="lang-content active"
+                data-en="Shows the distribution of stress levels based on the number of employees."
+                data-id="Distribusi tingkat stres berdasarkan jumlah karyawan."
+              >
+                Shows the distribution of stress levels based on the number of
+                employees.
+              </li>
+              <li
+                class="lang-content active"
+                data-en="Compares job satisfaction across different departments and job types."
+                data-id="Perbandingan kepuasan kerja berdasarkan departemen dan jenis pekerjaan."
+              >
+                Compares job satisfaction across different departments and job
+                types.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tech Stack -->
+          <div class="tech" data-aos="fade-left">
+            <h3
+              class="lang-content active"
+              data-en="Technology Stack"
+              data-id="Teknologi yang Digunakan"
+            >
+              Technology Stack
+            </h3>
+            <div class="icon-grid">
+              <img src="img/google-sheets.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: left; margin-top: 40px">
+          <a href="index.html#projects" class="btn-more">
+            <i class="fas fa-arrow-left"></i>
+            <span
+              class="lang-content active"
+              data-en="Back to Portfolio"
+              data-id="Kembali ke Portfolio"
+              >Back to Portfolio</span
+            >
+          </a>
+          <a
+            href="https://docs.google.com/spreadsheets/d/1DrdKnoIdGBU36mrGTfT11i6kI3-P39Co/edit?usp=sharing&ouid=113516949252078698801&rtpof=true&sd=true"
+            class="btn-more"
+          >
+            <i class="fa-regular fa-image"></i>
+            <span
+              class="lang-content active"
+              data-en="Open Google Sheets"
+              data-id="Lihat Google Sheets"
+              >Open Google Sheets</span
+            >
+          </a>
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="social-links">
+          <a
+            href="https://github.com/"
+            target="_blank"
+            class="social-link"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/arief-rahman-hakim-a76709340"
+            target="_blank"
+            class="social-link"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="mailto:ariefrahmanhakkim@gmail.com"
+            class="social-link"
+            aria-label="Email"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://wa.me/089652873664"
+            target="_blank"
+            class="social-link"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ariefrahmanhakkim/"
+            target="_blank"
+            class="social-link"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <p class="footer-text">
+          &copy; <span id="year"></span> Arief Rahman Hakim. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

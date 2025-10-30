@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualisasi Data Analyst| Arief Rahman Hakim</title>
+    <link rel="icon" type="image/png" href="img/emyu.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="nav-content">
+        <a href="index.html" class="logo">Portfolio</a>
+        <ul class="nav-links">
+          <li>
+            <a
+              href="index.html#home"
+              class="lang-content active"
+              data-en="Home"
+              data-id="Beranda"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#education"
+              class="lang-content active"
+              data-en="Education"
+              data-id="Pendidikan"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#projects"
+              class="lang-content active"
+              data-en="Projects"
+              data-id="Proyek"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#contact"
+              class="lang-content active"
+              data-en="Contact"
+              data-id="Kontak"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <div class="language-switcher">
+              <button class="lang-btn active" data-lang="en">EN</button>
+              <button class="lang-btn" data-lang="id">ID</button>
+            </div>
+          </li>
+          <li><button class="toggle" id="darkToggle">🌙</button></li>
+        </ul>
+        <button class="mobile-menu" id="mobileMenu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <button class="mobile-nav-close" id="mobileNavClose">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul>
+        <li>
+          <a
+            href="index.html#home"
+            class="lang-content active"
+            data-en="Home"
+            data-id="Beranda"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="index.html#education"
+            class="lang-content active"
+            data-en="Education"
+            data-id="Pendidikan"
+            >Education</a
+          >
+        </li>
+        <li>
+          <a
+            href="index.html#projects"
+            class="lang-content active"
+            data-en="Projects"
+            data-id="Proyek"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="index.html#contact"
+            class="lang-content active"
+            data-en="Contact"
+            data-id="Kontak"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="mobile-nav-controls">
+        <div class="language-switcher">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="id">ID</button>
+        </div>
+        <button class="toggle" id="darkToggleMobile">🌙</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <main>
+        <div class="project-header" data-aos="fade-up">
+          <h1
+            class="project-title lang-content active"
+            data-en="Visualisasi Data Analyst"
+            data-id="Visualisasi Data Analisis"
+          >
+            Visualisasi Data Analyst
+          </h1>
+        </div>
+
+        <!-- Image Carousel -->
+        <div class="swiper-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper myImageSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="img/USFlightDelay.png"
+                  alt="Review Page"
+                  onclick="openFullscreen(this)"
+                />
+              </div>
+            </div>
+
+            <!-- Tombol Navigasi -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <!-- Fullscreen Modal -->
+        <div
+          id="fullscreenModal"
+          class="fullscreen-modal"
+          onclick="closeFullscreen()"
+        >
+          <span class="close-btn">&times;</span>
+          <img id="fullscreenImg" />
+        </div>
+
+        <div data-aos="fade-up">
+          <h2
+            class="lang-content active"
+            data-en="About the Project"
+            data-id="Tentang Project"
+            style="margin-bottom: 10px"
+          >
+            About the Project
+          </h2>
+          <p
+            class="lang-content active content-text"
+            data-en="This project is an interactive data visualization dashboard that analyzes flight delays across the United States from February 2017 to July 2022.
+            The dashboard was designed to help users identify patterns and key factors contributing to flight delays by delay type, airline, and airport location.
+            Through clear and engaging visualizations, users can easily compare airline performance, explore yearly delay trends, and understand the main causes behind operational delays in the aviation industry."
+            data-id="Project ini merupakan visualisasi data interaktif yang menganalisis keterlambatan penerbangan di Amerika Serikat dari Februari 2017 hingga Juli 2022.
+            Dashboard ini dibuat untuk membantu pengguna memahami pola dan penyebab keterlambatan penerbangan berdasarkan jenis delay, maskapai, serta lokasi bandara.
+            Melalui visualisasi yang informatif, pengguna dapat dengan mudah membandingkan performa maskapai, mengamati tren keterlambatan tahunan, dan menemukan faktor utama yang berkontribusi terhadap keterlambatan penerbangan."
+          >
+            This project is an interactive data visualization dashboard that
+            analyzes flight delays across the United States from February 2017
+            to July 2022. The dashboard was designed to help users identify
+            patterns and key factors contributing to flight delays by delay
+            type, airline, and airport location. Through clear and engaging
+            visualizations, users can easily compare airline performance,
+            explore yearly delay trends, and understand the main causes behind
+            operational delays in the aviation industry.
+          </p>
+
+          <h3
+            class="lang-content active"
+            data-en="Additional Features"
+            data-id="Fitur Tambahan"
+            style="margin-bottom: 15px"
+          >
+            Additional Features
+          </h3>
+          <ul class="content-list">
+            <li
+              class="lang-content active"
+              data-en="Interactive filters to select time range, delay type, and airline."
+              data-id="Filter interaktif untuk memilih rentang waktu, jenis delay, dan maskapai penerbangan."
+            >
+              Interactive filters to select time range, delay type, and airline.
+            </li>
+            <li
+              class="lang-content active"
+              data-en="Dynamic tooltips displaying detailed information for each data point on the map."
+              data-id="Tampilan tooltip dinamis yang menampilkan detail data setiap titik di peta."
+            >
+              Dynamic tooltips displaying detailed information for each data
+              point on the map.
+            </li>
+            <li
+              class="lang-content active"
+              data-en="Responsive dashboard design for seamless navigation across devices."
+              data-id="Dashboard responsif dengan navigasi yang mudah dipahami."
+            >
+              Responsive dashboard design for seamless navigation across
+              devices.
+            </li>
+            <li
+              class="lang-content active"
+              data-en="Integrated visualization combining trends, distributions, and geographical insights."
+              data-id="Visualisasi tren dan distribusi dalam satu tampilan yang terintegrasi."
+            >
+              Integrated visualization combining trends, distributions, and
+              geographical insights.
+            </li>
+          </ul>
+        </div>
+
+        <div class="feature-tech">
+          <!-- Fitur Utama -->
+          <div class="fitur" data-aos="fade-right">
+            <h3
+              class="lang-content active"
+              data-en="Main Features"
+              data-id="Fitur Utama"
+            >
+              Main Features
+            </h3>
+            <ul>
+              <li
+                class="lang-content active"
+                data-en="Total delays by category (Arrival, Carrier, Weather, Security, etc)."
+                data-id="Total keterlambatan berdasarkan kategori (Arrival, Carrier, Weather, Security, dsb)."
+              >
+                Total keterlambatan berdasarkan kategori (Arrival, Carrier,
+                Weather, Security, dsb).
+              </li>
+
+              <li
+                class="lang-content active"
+                data-en="Delay distribution by airline (Carrier)."
+                data-id="Distribusi keterlambatan per maskapai (Carrier)."
+              >
+                Distribusi keterlambatan per maskapai (Carrier).
+              </li>
+
+              <li
+                class="lang-content active"
+                data-en="Trends in airline delay percentage from 2017-2022."
+                data-id="Tren persentase delay maskapai dari 2017-2022."
+              >
+                Tren persentase delay maskapai dari 2017-2022.
+              </li>
+
+              <li
+                class="lang-content active"
+                data-en="Interactive map of delays based on airport location."
+                data-id="Peta interaktif sebaran keterlambatan berdasarkan lokasi bandara."
+              >
+                Peta interaktif sebaran keterlambatan berdasarkan lokasi
+                bandara.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tech Stack -->
+          <div class="tech" data-aos="fade-left">
+            <h3
+              class="lang-content active"
+              data-en="Technology Stack"
+              data-id="Teknologi yang Digunakan"
+            >
+              Technology Stack
+            </h3>
+            <div class="icon-grid">
+              <img src="img/excel.png" alt="" />
+              <img src="img/tableau.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: left; margin-top: 40px">
+          <a href="index.html#projects" class="btn-more">
+            <i class="fas fa-arrow-left"></i>
+            <span
+              class="lang-content active"
+              data-en="Back to Portfolio"
+              data-id="Kembali ke Portfolio"
+              >Back to Portfolio</span
+            >
+          </a>
+          <a
+            href="https://public.tableau.com/views/USFlightDelay_17579323953420/USFlightDelay?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+            class="btn-more"
+          >
+            <i class="fa-regular fa-image"></i>
+            <span
+              class="lang-content active"
+              data-en="Open Tableau Dashboard"
+              data-id="Lihat Dashboard Tableau"
+              >Open Tableau Dashboard</span
+            >
+          </a>
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="social-links">
+          <a
+            href="https://github.com/"
+            target="_blank"
+            class="social-link"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/arief-rahman-hakim-a76709340"
+            target="_blank"
+            class="social-link"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="mailto:ariefrahmanhakkim@gmail.com"
+            class="social-link"
+            aria-label="Email"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://wa.me/089652873664"
+            target="_blank"
+            class="social-link"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ariefrahmanhakkim/"
+            target="_blank"
+            class="social-link"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <p class="footer-text">
+          &copy; <span id="year"></span> Arief Rahman Hakim. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
