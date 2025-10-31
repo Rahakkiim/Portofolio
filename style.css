@@ -86,7 +86,7 @@ main {
 }
 
 .project-title {
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-size: clamp(1.8rem, 4vw, 1 rem);
   font-weight: 800;
   margin-bottom: 20px;
   background: linear-gradient(135deg, #5a5eed, #a658ff);
@@ -101,7 +101,7 @@ main {
 }
 
 .project-description {
-  font-size: 1.1rem;
+  font-size: 1 rem;
   color: var(--text-muted);
   line-height: 1.7;
   max-width: 700px;
@@ -2014,3 +2014,4 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
+
